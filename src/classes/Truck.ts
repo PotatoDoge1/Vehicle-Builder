@@ -56,15 +56,16 @@ class Truck extends Vehicle implements AbleToTow {
     if (vehicle.model != null && vehicle.make != null){
       const vehicleMake = vehicle.make;
       const vehicleModel = vehicle.model;
-    }
-    // TODO: Check if the vehicle's weight is less than or equal to the truck's towing capacity
-    if (vehicle.weight < this.towingCapacity){
-    // TODO: If it is, log that the vehicle is being towed
-    console.log(`The ${vehicle} is being towed.`);
-    }
-    // TODO: If it is not, log that the vehicle is too heavy to be towed
-    else{
-      console.log(`The ${vehicle} is not being towed`);
+      // TODO: Check if the vehicle's weight is less than or equal to the truck's towing capacity
+      // TODO: If it is not, log that the vehicle is too heavy to be towed
+      if (vehicle.weight < this.towingCapacity){
+      // TODO: If it is, log that the vehicle is being towed
+        console.log(`The ${vehicleMake} is being towed.`);
+      } else{
+        console.log(`The ${vehicleModel} is too heavy to be towed.`);
+      }
+    } else {
+      console.log("An error occured, the vehicle does not have a make or model.");
     }
   }
 
@@ -81,7 +82,7 @@ class Truck extends Vehicle implements AbleToTow {
     console.log(`Year: ${this.year}`);
     console.log(`Weight: ${this.weight} lbs`);
     console.log(`Top Speed: ${this.topSpeed} mph`);
-    console.log(`Towing capacit: ${this.towingCapacity}`);
+    console.log(`Towing capacity: ${this.towingCapacity}`);
     console.log(
       `Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire`
     );

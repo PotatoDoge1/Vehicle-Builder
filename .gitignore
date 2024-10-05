@@ -4,7 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 # Personally-inputted files
-dist
+package-lock.json
 node_modules/
 dist/
 

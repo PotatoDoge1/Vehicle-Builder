@@ -7,15 +7,15 @@ import Wheel from "./Wheel.js";
 
 // define the Cli class
 class Cli {
-  // TODO: update the vehicles property to accept Truck and Motorbike objects as well
-  // TODO: You will need to use the Union operator to define additional types for the array
-  // TODO: See the AbleToTow interface for an example of how to use the Union operator
-  vehicles: (Car)[];
+  // DONE: update the vehicles property to accept Truck and Motorbike objects as well
+  // DONE: You will need to use the Union operator to define additional types for the array
+  // DONE: See the AbleToTow interface for an example of how to use the Union operator
+  vehicles: (Car | Motorbike | Truck)[];
   selectedVehicleVin: string | undefined;
   exit: boolean = false;
 
-  // TODO: Update the constructor to accept Truck and Motorbike objects as well
-  constructor(vehicles: (Car)[]) {
+  // DONE: Update the constructor to accept Truck and Motorbike objects as well
+  constructor(vehicles: (Car | Motorbike | Truck)[]) {
     this.vehicles = vehicles;
   }
 
@@ -70,6 +70,13 @@ class Cli {
           this.createCar();
         }
         // TODO: add statements to create a truck or motorbike if the user selects the respective vehicle type
+        if (answers.vehicleType === 'Motorbike') {
+          // create a motorbike
+          this.createMotorbike();
+        }
+        if (answers.vehicleType === 'Truck') {
+          this.createTruck();
+        }
       });
   }
 

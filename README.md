@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+- [Video Walkthrough](#video-walkthrough)
 - [Description](#description)
 - [Installation Instructions](#installation-instructions)
 - [Usage Information](#usage-information)
@@ -12,6 +13,11 @@
 - [Questions](#questions)
 - [License](#license)
 
+## Video Walkthrough
+[Download](https://github.com/PotatoDoge1/README-Generator/blob/main/video_example.mkv)  
+
+[Back to ToC](#table-of-contents)  
+  
 ## Description
 A challenge project that prompts a user to either create a new vehicle or select an existing one. The user will then be able to perform certain actions and print out details about the selected vehicle.   
   

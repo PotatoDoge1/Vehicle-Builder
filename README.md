@@ -14,7 +14,7 @@
 - [License](#license)
 
 ## Video Walkthrough
-[Download Link](https://github.com/PotatoDoge1/Vehicle-Builder/blob/main/VehicleBuilder.mkv)
+[Download Link](https://github.com/PotatoDoge1/Vehicle-Builder/raw/refs/heads/main/VehicleBuilder.mkv)
 
 [Back to ToC](#table-of-contents)  
   
